@@ -160,8 +160,10 @@
       }
       .txtFist p{
         text-align: center;
-        
+        color: #1b1464;
         font-size: 14px;
+        font-family: Encode Sans, sans-serif;
+        font-size: 20px;
       }
       .img_alunasMobile{
         display: flex;
@@ -217,6 +219,7 @@
         width: 100%;
         font-family: Encode Sans, sans-serif;
         font-size: 20px;
+        color: #1b1464;
         
     }
     
@@ -230,6 +233,7 @@
     }
     .grupos{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         background-color: #1b1464;
         padding: 2rem;
