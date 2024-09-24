@@ -1,0 +1,268 @@
+*{
+    font-family: 'Bree GRK';
+    src: url('/fonts/BreeGRK-Regular.ttf') format('ttf'),
+         url('/fonts/BreeGRK-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+.content_inf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url("/backOne2.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+   position: relative;
+  }
+ 
+  .txtFist{
+    
+    width: 50%;
+    padding: 4rem;
+    position: relative;
+    top: 20px;
+    
+  }
+  .txtFist span{
+    font-size: 70px;
+    font-weight: bold;
+    color:#1b1464 ;
+  }
+  .txtFist p{
+    font-family: Encode Sans, sans-serif;
+    font-size: 20px;
+  }
+  .img_alunas{
+    display: flex;
+    z-index: 100;
+    width: 500px;
+    height: 600px;
+    
+    
+  }
+  .img_alunasMobile{
+    display: none;
+    z-index: 100;
+    width: auto;
+    height: 100%;
+  }
+  .img_bolsa{
+    position: relative;
+    margin-top: 15%;
+    
+    width: 200px;
+    height: 180px ;
+  }
+  .tecnicos2{
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+}
+.tecnicosGeral{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/backTwo2.png") ;
+    background-size: cover;
+    
+    padding: 0px;
+}
+.txtTecnico{
+    width: 60%;
+    
+}
+.txtTecnico span{
+    font-size:80px ; 
+    color:#1b1464 ; 
+    font-weight:bold ;
+}
+.cursoTecnico{
+    
+    display:flex;
+    width:80%;
+}
+.cursoTecnico p{
+    width: 100%;
+    font-family: Encode Sans, sans-serif;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.alunaTec{
+   
+    width: 250px;
+}
+.cursoTec{
+    width: 250px;
+    height: auto;
+}
+.grupos{
+    display: flex;
+    
+    justify-content: space-between;
+    background-color: #1b1464;
+    padding: 2rem;
+}
+.cer{
+    display: flex;
+    flex-direction: column;
+}
+.tec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.quadro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28%;
+    border: 2px solid #0071bc ;
+    padding: 1rem;
+    margin: 1rem;
+}
+.quadro span{
+    color: #fff;
+    font-size: 22px;
+}
+.escola{
+    background-image: url("/backThree.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width:440px){
+    .txtFist{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1000%;
+        padding: 1rem;
+        position: relative;
+        top: 5px;
+        
+      }
+      .txtFist span{
+        font-size: 70px;
+        
+        text-align: center;
+      }
+      .txtFist p{
+        text-align: center;
+        
+        font-size: 14px;
+      }
+      .img_alunasMobile{
+        display: flex;
+        z-index: 100;
+        width: auto;
+        height: 100%;
+      }
+      .img_alunas{
+        display: none;
+        z-index: 100;
+        width: auto;
+        height: 100%;
+        
+        
+      }
+      .img_bolsa{
+        margin-bottom: 4rem;
+      }
+      .tecnicos2{
+        position: absolute;
+        bottom: 0;
+        z-index: 200;
+        width: 100%;
+    }
+    .tecnicosGeral{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url("/backTwo2.png") ;
+        background-size: cover;
+        background-position: center;
+        padding: 0px;
+        width: 100%;
+    }
+    .txtTecnico{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .txtTecnico span{
+        display: none;
+    }
+    .cursoTecnico{
+        
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:100%;
+        
+    }
+    .cursoTecnico p{
+        width: 100%;
+        font-family: Encode Sans, sans-serif;
+        font-size: 20px;
+        
+    }
+    
+    .alunaTec{
+       
+        width: 250px;
+    }
+    .cursoTec{
+        width: 250px;
+        height: auto;
+    }
+    .grupos{
+        display: flex;
+        justify-content: center;
+        background-color: #1b1464;
+        padding: 2rem;
+    }
+    .areas{
+        width: 90%;
+    }
+    .cer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .tec{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .quadro{
+        width: 80%;
+    }
+    .quadro span{
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+    }
+    .escola{
+        background-image: url("/backThree.png");
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+}
