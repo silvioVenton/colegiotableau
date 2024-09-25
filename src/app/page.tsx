@@ -30,10 +30,10 @@ export default function Home() {
         
         <div className="txtFist">
           <span>Futuro de Excelência</span>
-          <p>Para isso é necessario um presente estrutura e com projetos que vão alem da educação 
-para um desenvolvimento de habilidades essenciais como pensamento critico, criatividade e responsabilidade 
-e nos do Tableau preparamos nossos jovens para buscar seus objetivos
-enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelencia. </p>
+          <p>Para isso é necessário um presente estruturado e com projetos que vão além da educação 
+para um desenvolvimento de habilidades essenciais como pensamento crítico, criatividade e responsabilidade. 
+E nós do Tableau preparamos nossos jovens para buscar seus objetivos,
+enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excelência. </p>
 
         <Link href="#">
         <Button className ="btn_matriculas" color="primary">
@@ -122,7 +122,7 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
               />
           
           
-            <p>É com muito orgulho que o Colégio Tableau tem a satisfação em ter formado milhares de profissionais em nossas diversas areas de ensino técnico e dando novos horizontes ao nossos alunos. </p>
+            <p>É com muito orgulho que o Colégio Tableau tem a satisfação em ter formado milhares de profissionais em nossas diversas áreas de ensino técnico e dando novos horizontes ao nossos alunos. </p>
          
           
 

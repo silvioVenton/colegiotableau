@@ -375,13 +375,12 @@
         
     }
     .escolaVemsertableau{
-      display: flex;
+      
       justify-items: center;
-      align-items: center;
       padding-top: 2rem;
       padding-bottom: 2rem;
       
-      width: 100%;
+     
       
     }
     .img_vemsertableau{
