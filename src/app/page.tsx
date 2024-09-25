@@ -114,7 +114,7 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
           
           
               <Image
-              src="/cursoTEc.png"
+              src="/cursoTec.png"
               width={500}
               height={500}
               alt="curso tecnico"
