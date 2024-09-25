@@ -41,6 +41,9 @@ body {
   width: auto;
   height: auto;
 }
+.barras{
+  display: none;
+}
 
 @layer utilities {
   .text-balance {
@@ -70,6 +73,9 @@ body {
   .log_mack{
     width:50%;
    ;
+  }
+  .barras{
+    display: flex;
   }
   .navbar{
     

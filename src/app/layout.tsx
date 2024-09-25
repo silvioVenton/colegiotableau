@@ -52,17 +52,23 @@ export default function RootLayout({
 
             />
             <div className="flex flex-wrap gap-5  btn">
+            <Link href="/">
+            <Button color="primary">
+                Home
+            </Button>
             
+            </Link>
             <Link href="/tecnico">
             <Button color="primary">
                 Cursos Técnico
             </Button>
             
             </Link>
-
+            <Link href="/fundamental">
             <Button color="primary">
                 Ensino Fundamental e Médio
             </Button>
+            </Link>
             </div>
             
           
@@ -75,6 +81,13 @@ export default function RootLayout({
             height={80}
             alt="logotipo mackenzie"
             className="log_mack"
+          />
+          <Image
+          src="/barras.png"
+          width={30}
+          height={50}
+          alt="barras de menu"
+          className="barras"
           />
           
            

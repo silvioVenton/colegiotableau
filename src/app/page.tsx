@@ -1,11 +1,25 @@
 import Image from "next/image";
+import {Button, ButtonGroup} from "@nextui-org/button";
+import Link from "next/link";
 import "./escola.css";
 
 export default function Home() {
   return (
+
+    
     
       <main >
        <section className="content_inf">
+       <Link href="https://wa.me/5511991205350?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Ensino%20fundamental%20e%20m%C3%A9dio." target="_blank">
+            <Image
+            src="/btn_fundamental.png"
+            width={300}
+            height={50}
+            alt="botao fundamental e medio"
+            className="btn_fundMobile"
+            
+            />
+            </Link>
        <Image
         src="/alunas.png"
         width={400}
@@ -20,8 +34,29 @@ export default function Home() {
 para um desenvolvimento de habilidades essenciais como pensamento critico, criatividade e responsabilidade 
 e nos do Tableau preparamos nossos jovens para buscar seus objetivos
 enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelencia. </p>
-        </div>
+
+        <Link href="#">
+        <Button className ="btn_matriculas" color="primary">
+          <h1>Matrículas Abertas</h1>
+        </Button>
         
+        </Link>
+        </div>
+
+        <section className="direitaFund">
+          <div className="setBtnFund">
+            <Link href="https://wa.me/5511991205350?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Ensino%20fundamental%20e%20m%C3%A9dio." target="_blank">
+            <Image
+            src="/btn_fundamental.png"
+            width={300}
+            height={50}
+            alt="botao fundamental e medio"
+            className="btn_fund"
+            
+            />
+            </Link>
+            </div>
+        <div className="containerAlunasBolsa" style={{}}>
         <Image
         src="/alunas.png"
         width={400}
@@ -36,19 +71,31 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
         alt="bolsa de estudo"
         className="img_bolsa"
         />
+        </div>
+        </section>
 
        <Image
        src="/relevo3.png"
-       width={1080}
-       height={100}
+       width={1200}
+       height={150}
        alt="relevo "
-       className="tecnicos2"
+       className="tecnicos22"
        />
        
        </section>
 
 
        <section className="tecnicosGeral">
+        <Link href="https://wa.me/5511973799471?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20curso%20técnico" target="_blank">
+       <Image
+          src="/btn_whatsTecnico2.png"
+          width={50}
+          height={200}
+          alt="botao Tecnico whats"
+          className="btnTec"
+          
+          />
+          </Link>
        <Image
        src="/alunaTec.png"
        width={400}
@@ -65,6 +112,7 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
         
         <div className="cursoTecnico">
           
+          
               <Image
               src="/cursoTEc.png"
               width={500}
@@ -75,10 +123,22 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
           
           
             <p>É com muito orgulho que o Colégio Tableau tem a satisfação em ter formado milhares de profissionais em nossas diversas areas de ensino técnico e dando novos horizontes ao nossos alunos. </p>
+         
           
 
         </div>
+        
+        <div className ="btn_inscricoes">
+          <Link href="#">
+            <Button  color="primary">
+              <h1>Inscrições Abertas</h1>
+            </Button>
+            
+            </Link>
+        </div> 
+        
        </div>
+      
 
        </section>
        <section className="grupos">
@@ -136,7 +196,22 @@ enfrentar desafios e aproveitar oportunidades e alcansar  um futuro de excelenci
 
        </section>
        <section className="escola">
-        ddddd
+        <div className="escolaVemsertableau">
+       <Image
+        src="/vemsertableau.png"
+        width={1000}
+        height={300}
+        alt="vem ser tableau"
+        className="img_vemsertableau"
+       />
+       <Image
+        src="/vemsertableauMobile.png"
+        width={1000}
+        height={300}
+        alt="vem ser tableau"
+        className="img_vemsertableauMobile"
+       />
+       </div>
        </section>
       </main>
       

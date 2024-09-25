@@ -15,9 +15,15 @@
     width: 100%;
    position: relative;
   }
+
+  .btn_fundMobile{
+    display: none;
+  }
  
   .txtFist{
-    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     width: 50%;
     padding: 4rem;
     position: relative;
@@ -33,14 +39,41 @@
     font-family: Encode Sans, sans-serif;
     font-size: 20px;
   }
+  .setBtnFund{
+    width: 100%;
+  }
+  .btn_matriculas{
+    position: absolute;
+    left: 25%;
+    margin-top: 1rem;
+    width: 50%;
+  }
+  .btn_matriculas h1{
+    font-size: 24px;
+  }
   .img_alunas{
     display: flex;
     z-index: 100;
-    width: 500px;
-    height: 600px;
-    
+    width: 350px;
+  }
+  .direitaFund{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
     
   }
+  .btn_fund{
+    
+    margin-top:2rem; 
+    margin-Left:25%;
+  }
+  .containerAlunasBolsa{
+    display:flex;
+     position:relative;
+     padding-top:2rem;
+  }
+
   .img_alunasMobile{
     display: none;
     z-index: 100;
@@ -54,34 +87,46 @@
     width: 200px;
     height: 180px ;
   }
-  .tecnicos2{
+  .tecnicos22{
     position: absolute;
     bottom: 0;
     z-index: 200;
     width: 100%;
+    
 }
 .tecnicosGeral{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-image: url("/backTwo2.png") ;
     background-size: cover;
+    position: relative;
     
     padding: 0px;
 }
 .txtTecnico{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
     width: 60%;
+    
     
 }
 .txtTecnico span{
+    text-align: center;
+    
     font-size:80px ; 
     color:#1b1464 ; 
     font-weight:bold ;
+    
 }
 .cursoTecnico{
-    
+   
     display:flex;
-    width:80%;
+   
+    width:100%;
 }
 .cursoTecnico p{
     width: 100%;
@@ -94,6 +139,19 @@
    
     width: 250px;
 }
+
+.btn_inscricoes{
+    display: flex;
+    justify-content: center;
+    bottom: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  .btn_inscricoes h1{
+    font-size: 24px;
+  }
 .cursoTec{
     width: 250px;
     height: auto;
@@ -132,7 +190,27 @@
     background-image: url("/backThree.png");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     
+}
+.escolaVemsertableau{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  
+  width: 100%;
+  
+}
+.img_vemsertableau{
+  width: auto;
+  height: auto;
+}
+.img_vemsertableauMobile{
+  display: none;
 }
 
 
@@ -143,6 +221,12 @@
 
 
 @media (max-width:440px){
+    .content_inf{
+        justify-content: center;
+        
+      }
+
+
     .txtFist{
         display: flex;
         flex-wrap: wrap;
@@ -151,24 +235,32 @@
         padding: 1rem;
         position: relative;
         top: 5px;
-        
+       
       }
       .txtFist span{
         font-size: 70px;
+        line-height: 4.5rem;
         
         text-align: center;
       }
       .txtFist p{
+        
         text-align: center;
         color: #1b1464;
         font-size: 14px;
         font-family: Encode Sans, sans-serif;
         font-size: 20px;
       }
+      .btn_fundMobile{
+        display: flex;
+        margin-top: 1rem;
+      }
+      
       .img_alunasMobile{
+        margin-top: 1rem;
         display: flex;
         z-index: 100;
-        width: auto;
+        width: 70%;
         height: 100%;
       }
       .img_alunas{
@@ -177,6 +269,13 @@
         width: auto;
         height: 100%;
         
+        
+      }
+      
+
+      .btn_fund{
+       display: none;
+
         
       }
       .img_bolsa{
@@ -191,11 +290,11 @@
     .tecnicosGeral{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-items: center;
         align-items: center;
         background-image: url("/backTwo2.png") ;
         background-size: cover;
-        background-position: center;
+        
         padding: 0px;
         width: 100%;
     }
@@ -229,8 +328,15 @@
     }
     .cursoTec{
         width: 250px;
-        height: auto;
+        
     }
+
+    .btn_inscricoes{
+        
+      }
+      .btn_inscricoes h1{
+        font-size: 20px;
+      }
     .grupos{
         display: flex;
         flex-wrap: wrap;
@@ -267,6 +373,23 @@
         background-size: cover;
         background-position: center;
         
+    }
+    .escolaVemsertableau{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      
+      width: 100%;
+      
+    }
+    .img_vemsertableau{
+      display: none;
+    }
+    .img_vemsertableauMobile{
+      display: flex;
+      
     }
 
 }
