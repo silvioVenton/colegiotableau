@@ -33,6 +33,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
+        
         <Image
             src="/tableauAzul.png"
             width={100}
@@ -41,6 +43,8 @@ export default function RootLayout({
             className="log_tableauMobile"
 
             />
+        
+        
         <nav className="navbar">
           
             <Image
@@ -64,7 +68,7 @@ export default function RootLayout({
             </Button>
             
             </Link>
-            <Link href="/fundamental">
+            <Link href="/cer">
             <Button color="primary">
                 Ensino Fundamental e Médio
             </Button>
@@ -95,7 +99,67 @@ export default function RootLayout({
           
 
         </nav>
+
+
+        
         {children}
+
+        <footer>
+         <div className="footer_primeiroBloco">
+          
+          <h1>Colégio Tableau Jundiaí</h1>
+          <hr />
+          <span>Rua Doutor Leonardo Cavalcante, 328/334</span>
+          <span>Centro - Jundiaí / SP</span>
+
+
+         </div>
+         <div className="footer_colegio">
+
+         <dl>
+            <dt>Tableau Ensino</dt>
+            <dd> Fundamental</dd>
+            <dd> Médio</dd>
+            <dt> Tableau Técnico</dt>
+            <dd> Enfermagem</dd>
+            <dd> Radiologia</dd>
+            <dd> Veterinaria</dd>
+            <dd> Análises Clinicas</dd>
+            <dd> Segurança do Trabalho</dd>
+        </dl>
+          
+         </div>
+
+         <div className="footer_redes">
+
+          <h1>Nos siga nas Redes Sociais</h1>
+          <div className="footer_rede_icon">
+            <Image
+             src="/icon/logo_face.png"
+             width={40}
+             height={40}
+             alt="logo facebook"
+            />
+            <Image
+             src="/icon/logo_insta.png"
+             width={40}
+             height={40}
+             alt="logo instagran"
+            />
+          </div>
+
+         </div>
+
+         <div className="footer_contato">
+          <h1>Contatos</h1>
+          <hr />
+          <h2>(11) 4521-1444</h2>
+          <h2>Tecnico (11)97379-9471</h2>
+          <h2>Fundamental e Médio (11)99120-5350</h2>
+
+         </div>
+
+        </footer>
       </body>
     </html>
   );

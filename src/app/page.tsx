@@ -1,7 +1,14 @@
+"use client"
+
 import Image from "next/image";
 import {Button, ButtonGroup} from "@nextui-org/button";
 import Link from "next/link";
 import "./escola.css";
+import ContagemMedio from "./components/contagemMedio"
+import ContagemSaude from "./components/contagemSaude"
+import ContagemAdm from "./components/contagemAdm"
+import ContagemSeg from "./components/contagemSeg"
+
 
 export default function Home() {
   return (
@@ -56,7 +63,7 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
             />
             </Link>
             </div>
-        <div className="containerAlunasBolsa" style={{}}>
+        <div className="containerAlunasBolsa">
         <Image
         src="/alunas.png"
         width={400}
@@ -150,43 +157,34 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         className="areas"
         />
 
-        <div className="cer">
-          <div className="quadro">
-            <span>FUNDAMENTAL II</span>
-          </div>
-          <div className="quadro">
-            <span>ENSINO MÉDIO</span>
-          </div>
-        </div>
+        
 
         <div className="tec">
+        
           <div className="quadro">
-            <span>ENFERMAGEM</span>
+          <Link href="./cer"> <span>CER</span></Link>
+            <h3>Fundamental e Médio</h3>
           </div>
+        
+        
           <div className="quadro">
-            <span>RADIOLOGIA</span>
+          <Link href="./enfermagem"><span>ENFERMAGEM</span></Link>
+          </div>
+          
+          <div className="quadro">
+            <Link href="./radiologia"><span>RADIOLOGIA</span></Link>
             </div>
             <div className="quadro">
-            <span>VETERINÁRIA</span>
+            <Link href="./veterinaria"><span>VETERINÁRIA</span></Link>
+          </div>
+          
+          <div className="quadro">
+            <Link href="./analisesclinica"><span>ANÁLISES CLÍNICAS</span></Link>
           </div>
           <div className="quadro">
-            <span>FARMÁCIA</span>
+            <Link href="./segurancadotrabalho"><span>SEGURANÇA DO TRABALHO</span></Link>
           </div>
-          <div className="quadro">
-            <span>ANÁLISES CLÍNICAS</span>
-          </div>
-          <div className="quadro">
-            <span>SEGURANÇA DO TRABALHO</span>
-          </div>
-          <div className="quadro">
-            <span>RECURSOS HUMANOS</span>
-          </div>
-          <div className="quadro">
-            <span>LOGÍSTICA</span>
-          </div>
-          <div className="quadro">
-            <span>ADMINISTRAÇÃO</span>
-          </div>
+         
           
         </div>
 
@@ -211,7 +209,25 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         alt="vem ser tableau"
         className="img_vemsertableauMobile"
        />
-       </div>
+        
+       </div >
+      
+       <section className="contadores">
+       <ContagemMedio />
+       
+       <ContagemSaude />
+
+       <ContagemAdm />
+
+       <ContagemSeg />
+
+       </section>
+
+       
+       </section>
+
+       <section>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6753952185995!2d-46.89178412455903!3d-23.182044547766655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26894b5542f5%3A0x3c5830a2783f7d77!2sR.%20Dr.%20Leonardo%20Cavalcanti%2C%20334%20-%20Centro%2C%20Jundia%C3%AD%20-%20SP%2C%2013201-013!5e0!3m2!1spt-BR!2sbr!4v1728140856451!5m2!1spt-BR!2sbr" width="100%" height="450"></iframe>
        </section>
       </main>
       

@@ -54,7 +54,7 @@
   .img_alunas{
     display: flex;
     z-index: 100;
-    width: 350px;
+    width: 380px;
   }
   .direitaFund{
     position: relative;
@@ -175,6 +175,7 @@
 }
 .quadro{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 28%;
@@ -185,6 +186,10 @@
 .quadro span{
     color: #fff;
     font-size: 22px;
+}
+.quadro h3{
+  font-family: Encode Sans, sans-serif;
+  color: #fed20b;
 }
 .escola{
     background-image: url("/backThree.png");
@@ -200,7 +205,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
-  padding-bottom: 4rem;
+ 
   
   width: 100%;
   
@@ -212,6 +217,48 @@
 .img_vemsertableauMobile{
   display: none;
 }
+.contadores{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contagem{
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 1rem;
+  
+
+
+
+}
+.contagem h1{
+  
+  color: #fed20b;
+  font-size: 80px;
+  
+  
+  
+}
+.contagem h3{
+  font-size: 16px;
+  color: #fff;
+  font-family: Encode Sans, sans-serif;
+ 
+
+}
+.contagem h2{
+  color: #fed20b;
+  font-size: 30px;
+  
+}
+.contador_valores{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 
 
 
@@ -388,7 +435,16 @@
     }
     .img_vemsertableauMobile{
       display: flex;
+      width: 80%;
       
     }
-
+    .contagem{
+     width: 90%;
+     align-items: center;
+      
+    
+    
+    
+    }
+   
 }

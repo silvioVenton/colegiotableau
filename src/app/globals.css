@@ -44,6 +44,90 @@ body {
 .barras{
   display: none;
 }
+footer{
+  background-color: #1b1464;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+ 
+}
+.footer_primeiroBloco{
+
+  max-height: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer_primeiroBloco h1{
+  color: #fed20b;
+  font-family: Encode Sans, sans-serif;
+  font-size: 16px;
+}
+.footer_primeiroBloco span{
+  font-family: Encode Sans, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer_colegio{
+
+}
+.footer_colegio h1{
+  
+}
+.footer_colegio{
+
+}
+.footer_colegio dt{
+  color: #fed20b;
+  font-family: Encode Sans, sans-serif;
+}
+.footer_colegio dd{
+  margin-left: 1rem;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Encode Sans, sans-serif;
+}
+.footer_redes{
+  display: flex;
+  flex-direction: column;
+
+}
+.footer_redes h1{
+  color: #fed20b;
+  font-size: 14px;
+  font-family: Encode Sans, sans-serif;
+  
+}
+.footer_rede_icon{
+  display: flex;
+  justify-content: space-around;
+  margin: .5rem;
+}
+.footer_contato{
+  display:flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Encode Sans, sans-serif;
+  color: #ffffff;
+}
+.footer_contato h1{
+  color: #fed20b;
+  font-size: 14px;
+  font-family: Encode Sans, sans-serif;
+}
+.footer_contato h2{
+  font-family: Encode Sans, sans-serif;
+  color: #ffffff;
+}
+
+
+
 
 @layer utilities {
   .text-balance {
@@ -85,5 +169,11 @@ body {
   }
   .btn{
     display: none;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
   }
 }
