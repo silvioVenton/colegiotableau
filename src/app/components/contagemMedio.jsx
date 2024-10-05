@@ -7,7 +7,7 @@ export default function ContagemMedio(){
     return(
         <div className="contagem">
         <Image
-        src="/maisDe.png"
+        src="/mais.png"
         width={60}
         height={80}
         alt="mais de"
