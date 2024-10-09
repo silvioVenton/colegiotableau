@@ -12,7 +12,7 @@ export default function Contador(props){
 
 return(
     <>
-    <h1>{numero}</h1>
+    {numero}
     </>
 )
    

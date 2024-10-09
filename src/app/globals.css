@@ -43,6 +43,8 @@ body {
 }
 .barras{
   display: none;
+  width: auto;
+  height: auto;
 }
 footer{
   background-color: #1b1464;
@@ -74,15 +76,7 @@ footer{
   color: #ffffff;
 }
 
-.footer_colegio{
 
-}
-.footer_colegio h1{
-  
-}
-.footer_colegio{
-
-}
 .footer_colegio dt{
   color: #fed20b;
   font-family: Encode Sans, sans-serif;

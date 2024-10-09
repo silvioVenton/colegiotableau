@@ -8,6 +8,7 @@ import ContagemMedio from "./components/contagemMedio"
 import ContagemSaude from "./components/contagemSaude"
 import ContagemAdm from "./components/contagemAdm"
 import ContagemSeg from "./components/contagemSeg"
+import Cadastro from "./components/cadastro"
 
 
 export default function Home() {
@@ -148,6 +149,8 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
       
 
        </section>
+       <Cadastro></Cadastro>
+
        <section className="grupos">
         <Image
         src="/grupo.png"

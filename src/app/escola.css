@@ -18,6 +18,8 @@
 
   .btn_fundMobile{
     display: none;
+    width: auto;
+    height: auto;
   }
  
   .txtFist{
@@ -105,6 +107,10 @@
     
     padding: 0px;
 }
+.btnTec{
+  width: auto;
+  height: auto;
+}
 .txtTecnico{
     display: flex;
     flex-direction: column;
@@ -156,6 +162,21 @@
     width: 250px;
     height: auto;
 }
+
+.formulario{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.headLine{
+  font-size: 70px;
+  font-weight: bold;
+  color:#1b1464;
+  text-align: center;
+}
+
+
 .grupos{
     display: flex;
     
