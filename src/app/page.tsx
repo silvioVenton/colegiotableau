@@ -149,7 +149,10 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
       
 
        </section>
+       <section className="formularioWhite">
        <Cadastro></Cadastro>
+       </section>
+       
 
        <section className="grupos">
         <Image

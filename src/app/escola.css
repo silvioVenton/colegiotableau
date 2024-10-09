@@ -163,11 +163,14 @@
     height: auto;
 }
 
+
 .formulario{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  background-color: #fff;
+  
 }
 .headLine{
   font-size: 70px;

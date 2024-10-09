@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { db } from "firebase/firestore"
 import { collection, addDoc } from "firebase/firestore"
+import "../../app/escola.css";
 
 const Cadastro = ()=> {
     const [form, setForm] = useState({
@@ -42,7 +43,7 @@ const Cadastro = ()=> {
       </p>
       <form onSubmit={handleSubmit} style={formStyle}>
         <select style={inputStyle} name="curso" value={form.curso} onChange={handleChange}>
-            <option value="">Curso de interesse</option>
+            <option value="">Curso de Interesse</option>
             <option value="fundamental">Fundamental</option>
             <option value="ensinoMedio">Ensino Médio</option>
             <option value="auxiliarEnfermagem">Auxiliar de Enfermagem</option>
