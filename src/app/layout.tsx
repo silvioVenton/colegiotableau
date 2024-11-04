@@ -1,13 +1,13 @@
 // Arquivo RootLayout.tsx
 
-import type { Metadata } from "next";
+
 import "./globals.css";
 import Image from "next/image";
 import React, { useState } from 'react';
 import { Button, ButtonGroup } from "@nextui-org/button";
 import Link from "next/link";
 import Menu from "./components/BotaoSuspenso"
-import MenuSuspenso from "./components/MenuSuspenso";
+
 
 
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <MenuSuspenso></MenuSuspenso>
+        
       
         <Image
           src="/tableauAzul.png"
