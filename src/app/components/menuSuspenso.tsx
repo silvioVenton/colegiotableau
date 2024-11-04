@@ -1,15 +1,15 @@
-import Link from "next/link"
-import Image from "next/image"
-import "../../app/paginas.css"
-export default function MunuSuspenso(){
+"use client"
+
+
+import { useState } from "react";
+import Menu from "./BotaoSuspenso";
+
+export default function MenuSuspenso(){
+   
+    
     return (
         <>
-        <div className="menu_suspenso">
-            <Link href="/">
-            <div> Home </div>
-            
-            </Link>
-        </div>
+        
         </>
     )
 }

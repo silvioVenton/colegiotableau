@@ -1,0 +1,142 @@
+.container {
+  
+  
+  max-width: 100%;
+  
+  background: linear-gradient(to right, #e3f2fd, #f7f7f7);
+}
+.logoWhatsapp{
+    
+  position:fixed; 
+  right:3rem;
+  bottom:3rem;
+}
+.backgroundTecnico{
+  background-image: url("/tecnico/backgroundTecnico.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+}
+.dados{
+ padding-top:7rem;
+ padding-bottom: 9rem;
+}
+.headline_dados{
+  position:relative;
+  
+  width: 60%;
+}
+.headline_dados p{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  
+  font-family: 'Bree GRK';
+}
+.headline_dados h1{
+  color: #e3f2fd;
+}
+/* Hero Section */
+.heroSection {
+  background:#1b1464;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+ 
+  backdrop-filter: blur(8px);
+  margin-bottom: 40px;
+}
+
+.heroHeadline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+  font-family: 'Bree GRK';
+}
+
+.heroSubheadline {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+.whatsappButtonhead {
+ 
+  position: absolute;
+  margin-top: 2rem;
+  background: rgba(4, 2, 107, 9);
+  color: hsl(240, 100%, 100%);
+  padding: 14px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+.whatsappButton {
+ 
+  
+  margin-top: 2rem;
+  background: rgba(4, 2, 107, 9);
+  color: hsl(240, 100%, 100%);
+  padding: 14px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.whatsappButton:hover {
+  background: rgba(37, 211, 102, 0.8);
+  transform: scale(1.05);
+}
+
+/* Cursos Section */
+.cursosSection {
+  margin-top: 40px;
+}
+
+.cursosTitle {
+  font-size: 3rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Bree GRK';
+}
+
+.cursosDescription {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.cursoItem {
+  background: #fff;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.cursoItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cursoItem h3 {
+  color: #003366;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Bree GRK';
+}
+
+.cursoItem p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}

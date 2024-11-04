@@ -15,10 +15,57 @@
 }
 
 body {
+  
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.menu_suspenso{
+  top: 0;
+  position:fixed; 
+  background-color:rgba(0, 0, 128, 0.9); 
+  color:#fff; 
+  z-index:201; 
+  width:80%; 
+  height:100vh;
+  padding: 1rem;
+  right:-100%;
+  transition: right 0.3s ease-in-out;
+  
+ 
+  
+}
+.menu_suspensoOpen{
+  top: 0;
+  position:fixed; 
+  background-color:rgba(0, 0, 128, 0.9); 
+  color:#fff; 
+  z-index:201; 
+  width:80%; 
+  height:100vh;
+  padding: 1rem;
+  right:0;
+  transition: right 0.3s ease-in-out;
+  
+  
+  
+}
+.menu_suspenso ul li{
+  border: #fed20b 1px solid;
+  margin: 0.5rem;
+  padding: .5rem;
+  border-radius: 0.7rem;
+
+}
+
+.menu_suspensoOpen ul li{
+  border: #fed20b 1px solid;
+  margin: 0.5rem;
+  padding: .5rem;
+  border-radius: 0.7rem;
+
+}
+
 .log_tableauMobile{
   display: none;
 }
@@ -45,6 +92,7 @@ body {
   display: none;
   width: auto;
   height: auto;
+  cursor: pointer;
 }
 footer{
   background-color: #1b1464;
@@ -124,6 +172,8 @@ footer{
 
 
 @layer utilities {
+
+  
   .text-balance {
     text-wrap: balance;
   }
@@ -136,9 +186,9 @@ footer{
   }
   .log_tableauMobile{
     display: flex;
-    width: 40%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    width: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0 auto;
     text-align: center;
     
@@ -155,9 +205,7 @@ footer{
   .barras{
     display: flex;
   }
-  .navbar{
-    
-  }
+  
   .log_tableau{
    display: none;
   }

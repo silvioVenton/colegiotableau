@@ -8,15 +8,24 @@ import ContagemMedio from "./components/contagemMedio"
 import ContagemSaude from "./components/contagemSaude"
 import ContagemAdm from "./components/contagemAdm"
 import ContagemSeg from "./components/contagemSeg"
-import Cadastro from "./components/cadastro"
+import Cadastro from "./components/cadastro.js"
+
+
+
+
 
 
 export default function Home() {
+
+
+
+
   return (
 
     
     
       <main >
+        
        <section className="content_inf">
        <Link href="https://wa.me/5511991205350?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Ensino%20fundamental%20e%20m%C3%A9dio." target="_blank">
             <Image
@@ -83,7 +92,7 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         </section>
 
        <Image
-       src="/relevo3.png"
+       src="/ondanova.png"
        width={1200}
        height={150}
        alt="relevo "
@@ -137,9 +146,9 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         </div>
         
         <div className ="btn_inscricoes">
-          <Link href="#">
+          <Link href="/tecnico">
             <Button  color="primary">
-              <h1>Inscrições Abertas</h1>
+              <h1>Conheça nossos Cursos</h1>
             </Button>
             
             </Link>
@@ -149,9 +158,19 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
       
 
        </section>
+
+
+
+
+
        <section className="formularioWhite">
-       <Cadastro></Cadastro>
+       <Cadastro/>
        </section>
+
+
+
+
+
        
 
        <section className="grupos">
@@ -162,9 +181,6 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         alt="grupo"
         className="areas"
         />
-
-        
-
         <div className="tec">
         
           <div className="quadro">
@@ -193,12 +209,9 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
          
           
         </div>
+        </section>
 
 
-
-
-
-       </section>
        <section className="escola">
         <div className="escolaVemsertableau">
        <Image
@@ -218,7 +231,7 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
         
        </div >
       
-       <section className="contadores">
+       <div className="contadores">
        <ContagemMedio />
        
        <ContagemSaude />
@@ -227,14 +240,16 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
 
        <ContagemSeg />
 
+       </div>
+
        </section>
+
 
        
-       </section>
-
-       <section>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6753952185995!2d-46.89178412455903!3d-23.182044547766655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26894b5542f5%3A0x3c5830a2783f7d77!2sR.%20Dr.%20Leonardo%20Cavalcanti%2C%20334%20-%20Centro%2C%20Jundia%C3%AD%20-%20SP%2C%2013201-013!5e0!3m2!1spt-BR!2sbr!4v1728140856451!5m2!1spt-BR!2sbr" width="100%" height="450"></iframe>
-       </section>
+       
+
+       
       </main>
       
     

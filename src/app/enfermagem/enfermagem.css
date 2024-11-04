@@ -1,0 +1,276 @@
+.container {
+    max-Width:100%;
+    margin: 0 auto;
+   
+    font-Family: Arial, sans-serif;
+  }
+  .logoWhatsapp{
+    z-index: 100;
+    position:fixed; 
+    right:3rem;
+    bottom:3rem;
+}
+.logoWhatsapp{
+  width: auto;
+  height: auto;
+}
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/tecnico/backgroundTecnico-01.png');
+    background-size: cover;
+    justify-content: flex-start;
+    
+    
+    padding: 100px 20px;
+    
+    
+    
+  }
+  .hero h1{
+    font-family: 'Bree GRK';
+    font-Size:4em;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .hero p{
+    font-family: Encode Sans, sans-serif; 
+    color:#5ec1cc ;
+    font-size: 30px;
+    margin-bottom: 3rem;
+  }
+  .buttonHero {
+    text-align: center;
+    width: 30%;
+    background-Color:#FFD700;
+    color: #1b1464;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+    font-weight: bolder;
+  }
+  .cause{
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 3em;
+  }
+  .cause h2{
+    font-Size: 4.5em;
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+    text-transform: uppercase;
+    
+
+  }
+  .cause p{
+    width: 80%;
+    font-family: Encode Sans, sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+
+  }
+  .causeButton{
+   border-radius: 10px;
+    background-color: #fed20b;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Bree GRK';
+    font-size: 20px;
+  }
+
+  .onde{
+    width: 100%;
+    background-color:#5ec1cc ;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .onde h2{
+    font-Size: 3.5em;
+    color: #fff ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .ondeLocais ul li{
+    font-family: Encode Sans, sans-serif;
+    font-size: 30px;
+   font-weight: bolder;
+   color: #1b1464;
+  }
+
+ .sectionDados{
+  
+  margin-left: 4em;
+  margin-right: 4em;
+  border: #2e82bf 2px solid;
+  border-radius: 15px;
+  margin-Bottom:50px;
+  margin-top:50px;
+  padding: 2em;
+ }.dadosCofen{
+  
+  text-align: center;
+  
+ }
+ .dadosCofen h2{
+    font-Size: 3em;
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+  }
+
+  .classe{
+    width: 100%;
+    background-image: url('/tecnico/backgroundClasse-01.png');
+    background-size: cover;
+    padding: 3rem;
+  }
+  .classe h2{
+    font-family: 'Bree GRK';
+    font-Size:4em;
+    color: #fff;
+    font-weight: 600;
+  }
+  .classe p{
+    font-family: Encode Sans, sans-serif; 
+    color:#5ec1cc ;
+    font-size: 30px;
+  }
+  
+
+ 
+  .section {
+    margin-Bottom:50px;
+    padding: 20px;
+  }
+  .cta {
+    display: flex;
+    flex-direction: column;
+    
+    background-Color: #FFD700;
+    color: #1b1464;
+    padding: 20px 0;
+    text-Align: center;
+    font-Weight: bold;
+  }
+  .buttonCta{
+    width: 30%;
+    background-Color: #1b1464;
+    color: #fff;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+    margin: 0 auto;
+  }
+  .button {
+    background-Color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+  }
+  .sectionTitle {
+    font-Size: 3em;
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+  }
+  .sectionText {
+    font-Size: 1.2em;
+    line-Height: 1.6;
+    color: #333;
+  }
+  .vaga{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  @media (max-width: 440px){
+    .logoWhatsapp{
+      
+      right:2rem;
+      bottom:2rem;
+  }
+    .logoWhatsapp{
+      width: 50px;
+      height: 50px;
+    }
+  
+    .hero{
+      background-position: center;
+      padding: 5px 20px;
+    }
+    .hero h1{
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .hero p{
+      font-size: 20px;
+      text-align: center;
+    }
+    .buttonHero{
+      width: 80%;
+      margin:0 auto 2rem;
+
+    }
+    .cause h2{
+      font-size: 3em;
+      font-weight: bolder;
+    }
+    .cause p{
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+    .causeButton{
+      background-color: #1b1464;
+      color: #fff;
+    }
+    .sectionDados{
+      margin: 0;
+      border: none;
+      padding: 2;
+    }
+    .grafico{
+      width: 100%;
+    }
+    .classe{
+      padding: 1rem;
+    }
+    .classe h2{
+      text-align: center;
+    }
+    .classe p{
+      font-size: 20px;
+      text-align: center;
+    }
+    .cta{
+      padding: 2rem;
+    }
+    .buttonCta{
+      width: 80%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+
+  }
+
+

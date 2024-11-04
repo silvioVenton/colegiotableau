@@ -6,12 +6,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBvAdic7oeDRK2bjbj4XBlMEB4151-8Q3c",
-  authDomain: "next-crud-f873c.firebaseapp.com",
-  projectId: "next-crud-f873c",
-  storageBucket: "next-crud-f873c.appspot.com",
-  messagingSenderId: "1086219570263",
-  appId: "1:1086219570263:web:8314f6cd2063ab73f52712"
+  apiKey: "AIzaSyDdoJdRbFeqOBAQeE4uePqYxs-5TaOfdCM",
+  authDomain: "colegiotableau-ed499.firebaseapp.com",
+  databaseURL: "https://colegiotableau-ed499-default-rtdb.firebaseio.com",
+  projectId: "colegiotableau-ed499",
+  storageBucket: "colegiotableau-ed499.appspot.com",
+  messagingSenderId: "1008092499368",
+  appId: "1:1008092499368:web:740c0397bb460b2c8ba19d"
 };
 
 // Initialize Firebase

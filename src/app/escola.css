@@ -5,6 +5,17 @@
     font-weight: normal;
     font-style: normal;
   }
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+
+    
+  }
 .content_inf{
     display: flex;
     flex-wrap: wrap;
@@ -78,9 +89,9 @@
 
   .img_alunasMobile{
     display: none;
-    z-index: 100;
+    z-index: 101;
     width: auto;
-    height: 100%;
+    height: auto;
   }
   .img_bolsa{
     position: relative;
@@ -162,7 +173,12 @@
     width: 250px;
     height: auto;
 }
-
+.formularioWhite{
+  width: 100%;
+  
+  position: relative;
+  
+}
 
 .formulario{
   display: flex;
@@ -216,10 +232,12 @@
   color: #fed20b;
 }
 .escola{
+  width: 100%;
     background-image: url("/backThree.png");
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
     
@@ -250,7 +268,7 @@
 .contagem{
   display: flex;
   flex-wrap: wrap;
-
+  
   margin: 1rem;
   
 
@@ -279,7 +297,9 @@
 }
 .contador_valores{
   display: flex;
+  
   flex-direction: column;
+  
   
 }
 
@@ -332,15 +352,22 @@
         display: flex;
         z-index: 100;
         width: 70%;
-        height: 100%;
+        height: auto;
       }
       .img_alunas{
         display: none;
         z-index: 100;
         width: auto;
-        height: 100%;
+        height: auto;
         
         
+      }
+
+      .btn_matriculas{
+        position: absolute;
+        left: 10%;
+        margin-top: 1rem;
+        width: 80%;
       }
       
 
@@ -465,10 +492,13 @@
     .contagem{
      width: 90%;
      align-items: center;
+     }
+     .contador_valores{
       
-    
-    
-    
+      width: 80%;
+      
+      
+      
     }
    
 }
