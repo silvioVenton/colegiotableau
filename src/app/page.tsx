@@ -10,21 +10,10 @@ import ContagemAdm from "./components/contagemAdm"
 import ContagemSeg from "./components/contagemSeg"
 import Cadastro from "./components/cadastro.js"
 
-
-
-
-
-
 export default function Home() {
+return (
 
-
-
-
-  return (
-
-    
-    
-      <main >
+    <main >
         
        <section className="content_inf">
        <Link href="https://wa.me/5511991205350?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Ensino%20fundamental%20e%20m%C3%A9dio." target="_blank">
