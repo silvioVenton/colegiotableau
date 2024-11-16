@@ -342,6 +342,9 @@
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    .dadosCofen h1{
+      font-size: 2.5rem;
+    }
    
     .dadosCofen p{
       font-size: 20px;
