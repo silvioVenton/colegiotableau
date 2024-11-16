@@ -12,7 +12,7 @@ export default function SegurancadoTrabalho(){
         height={80}
         alt="logoWhatsapp"
         className="logoWhatsapp"
-        style={{margin:'0 auto'}}
+        
         
         />
         </a>

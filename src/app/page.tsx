@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import {Button, ButtonGroup} from "@nextui-org/button";
+import {Button} from "@nextui-org/button";
 import Link from "next/link";
 import "./escola.css";
 import ContagemMedio from "./components/contagemMedio"
