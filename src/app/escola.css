@@ -4,6 +4,7 @@
          url('/fonts/BreeGRK-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-family: "Bree Serif", serif;
   }
   main{
     width: 100%;
