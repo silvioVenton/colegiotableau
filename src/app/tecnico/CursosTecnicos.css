@@ -1,3 +1,11 @@
+*{
+  font-family: 'Bree GRK';
+    src: url('/fonts/BreeGRK-Regular.ttf') format('ttf'),
+         url('/fonts/BreeGRK-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+  }
 *h1{}
 
 
