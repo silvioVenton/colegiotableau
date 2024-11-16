@@ -35,7 +35,7 @@ return (
         />
         
         <div className="txtFist">
-          <span>Futuro de Excelência</span>
+          <span>Futuro de excelência</span>
           <p>Para isso é necessário um presente estruturado e com projetos que vão além da educação 
 para um desenvolvimento de habilidades essenciais como pensamento crítico, criatividade e responsabilidade. 
 E nós do Tableau preparamos nossos jovens para buscar seus objetivos,
@@ -43,7 +43,7 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
 
         <Link href="/cer/#matriculasFundamental">
         <Button className ="btn_matriculas" color="primary">
-          <h1>Matrículas Abertas</h1>
+          <h1>Matrículas abertas</h1>
         </Button>
         
         </Link>

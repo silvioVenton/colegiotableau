@@ -16,26 +16,26 @@ export default function Fundamental(){
         </a>
         <main>
         <section className="hero">
-            <h1>A Educação que Transforma o Futuro do Seu Filho</h1>
+            <h1>A educação que transforma o futuro do seu filho</h1>
             <p>Prepare-se para oferecer a ele uma formação completa, que une excelência acadêmica e desenvolvimento pessoal, para conquistar o mundo.</p>
             <a href="#matriculasFundamental" className="buttonHero">  <q>Matriculas Abertas</q></a>
         </section>
 
         <section className="contentCer">
-            <h1>O que Nosso Ensino Fundamental e Médio Oferecem</h1>
+            <h1>O que nosso ensino fundamental e médio oferecem</h1>
             <div className="itensContentCer">
                 <div className="item">
-                    <h2>Qualidade Acadêmica:</h2>
+                    <h2>Qualidade acadêmica:</h2>
                     <span>Conteúdo atualizado e interdisciplinar, que prepara para o ensino superior e para a vida.</span>
 
                 </div>
                 <div className="item">
-                    <h2>Desenvolvimento Pessoal:</h2>
+                    <h2>Desenvolvimento pessoal:</h2>
                     <span> Atividades que incentivam a criatividade, o pensamento crítico e a confiança.</span>
 
                 </div>
                 <div className="item">
-                    <h2>Apoio Emocional:</h2>
+                    <h2>Apoio emocional:</h2>
                     <span>Equipe dedicada ao bem-estar emocional dos alunos, com acompanhamento personalizado</span>
 
                 </div>
