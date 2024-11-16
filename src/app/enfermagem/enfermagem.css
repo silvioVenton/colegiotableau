@@ -1,7 +1,18 @@
+
+* h1 {
+  font-family: 'Bree GRK';
+  font-size:3.5rem; 
+  font-weight: 600;
+}
+* p {
+  font-family: Encode Sans, sans-serif; 
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .container {
     max-Width:100%;
     margin: 0 auto;
-   
     font-Family: Arial, sans-serif;
   }
   .logoWhatsapp{
@@ -19,25 +30,15 @@
     flex-direction: column;
     background-image: url('/tecnico/backgroundTecnico-01.png');
     background-size: cover;
-    justify-content: flex-start;
-    
-    
+    text-align: center;
     padding: 100px 20px;
-    
-    
-    
-  }
+}
   .hero h1{
-    font-family: 'Bree GRK';
-    font-Size:4em;
-    color: #fff;
-    font-weight: 600;
+    color: #FFD700;
     margin-bottom: 3rem;
   }
   .hero p{
-    font-family: Encode Sans, sans-serif; 
     color:#5ec1cc ;
-    font-size: 30px;
     margin-bottom: 3rem;
   }
   .buttonHero {
@@ -48,9 +49,35 @@
     padding: 15px 30px;
     border-Radius: 5px;
     text-Decoration: none;
+    font-size: 20px;
     font-weight: bolder;
+    margin: 0 auto;
   }
+
+.conteudoCurso{
+  display: flexbox;
+  justify-items: center;
+  padding: 2rem;
+}
+.conteudoCurso h2{
+  font-family: 'Bree GRK';
+    font-Size:4em;
+    font-weight: 600;
+}
+.conteudoCurso ul{
+  text-align: center;
+}
+.conteudoCurso ul li{
+  font-family: Encode Sans, sans-serif; 
+    color:#1b1464;
+    font-size: 30px;
+}
+
+
   .cause{
+    background-image: url('/backTwo2.png');
+      background-size: cover;
+      
     padding-top: 3em;
     display: flex;
     flex-direction: column;
@@ -58,19 +85,17 @@
     justify-items: center;
     padding-bottom: 3em;
   }
-  .cause h2{
-    font-Size: 4.5em;
+  .cause h1{
+    
     color: #1b1464 ;
     font-family: 'Bree GRK';
     font-weight: 600;
-    text-transform: uppercase;
+    
     
 
   }
   .cause p{
     width: 80%;
-    font-family: Encode Sans, sans-serif;
-    font-size: 20px;
     margin: 0 auto;
     line-height: 1.5em;
     margin-bottom: 3rem;
@@ -80,13 +105,14 @@
   }
   .causeButton{
    border-radius: 10px;
-    background-color: #fed20b;
+    background-color: #1b1464 ;
     width: 300px;
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: 'Bree GRK';
     font-size: 20px;
+    color: #FFD700;
   }
 
   .onde{
@@ -97,12 +123,10 @@
     flex-direction: column;
     padding-bottom: 2rem;
   }
-  .onde h2{
-    font-Size: 3.5em;
+  .onde h1{
+    
     color: #fff ;
-    font-family: 'Bree GRK';
-    font-weight: 600;
-    text-transform: uppercase;
+    
   }
   .ondeLocais ul li{
     font-family: Encode Sans, sans-serif;
@@ -125,11 +149,18 @@
   text-align: center;
   
  }
- .dadosCofen h2{
-    font-Size: 3em;
+ .dadosCofen h1{
+    
     color: #1b1464 ;
     font-family: 'Bree GRK';
     font-weight: 600;
+  }
+  
+
+  .galeria{
+    display: grid;
+    grid-auto-flow: column;
+
   }
 
   .classe{
@@ -138,16 +169,16 @@
     background-size: cover;
     padding: 3rem;
   }
-  .classe h2{
+  .classe h1{
     font-family: 'Bree GRK';
-    font-Size:4em;
+    
     color: #fff;
     font-weight: 600;
   }
   .classe p{
-    font-family: Encode Sans, sans-serif; 
+    
     color:#5ec1cc ;
-    font-size: 30px;
+    
   }
   
 
@@ -165,6 +196,12 @@
     padding: 20px 0;
     text-Align: center;
     font-Weight: bold;
+  }
+  
+  .cta p{
+    font-size: 20px;
+    padding-bottom: 2rem;
+    color: #000;
   }
   .buttonCta{
     width: 30%;
@@ -202,6 +239,13 @@
   }
 
   @media (max-width: 440px){
+
+ *h1{
+  font-size: 5rem;
+
+ }
+
+
     .logoWhatsapp{
       
       right:2rem;
@@ -214,7 +258,7 @@
   
     .hero{
       background-position: center;
-      padding: 5px 20px;
+      padding: 2rem
     }
     .hero h1{
       font-size: 2.5rem;
@@ -230,12 +274,38 @@
       margin:0 auto 2rem;
 
     }
-    .cause h2{
-      font-size: 3em;
-      font-weight: bolder;
+
+    .conteudoCurso{
+      display: flexbox;
+      text-align: center;
+      padding: 2rem;
+
+    }
+    .conteudoCurso h1{
+      font-family: 'Bree GRK';
+        
+        
+    }
+    .conteudoCurso ul{
+      text-align: center;
+    }
+    .conteudoCurso ul li{
+      font-family: Encode Sans, sans-serif; 
+        color:#1b1464;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .cause{
+      
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .cause h1{
+      font-size: 2.5em;
+      font-weight: 600;
     }
     .cause p{
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 1px;
       line-height: 1.5;
     }
@@ -243,18 +313,44 @@
       background-color: #1b1464;
       color: #fff;
     }
+    .onde{
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+    }
+    
+    .onde ul li{
+      font-size: 20px;
+    }
     .sectionDados{
       margin: 0;
       border: none;
       padding: 2;
     }
+    .dadosCofen{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+   
+    .dadosCofen p{
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
     .grafico{
-      width: 100%;
+      display: none;
+    }
+
+    .galeria{
+      
+      display: grid;
+      grid-auto-flow:row;
+  
     }
     .classe{
       padding: 1rem;
     }
-    .classe h2{
+    .classe h1{
       text-align: center;
     }
     .classe p{

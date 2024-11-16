@@ -2,8 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import "../tecnico/CursosTecnicos.css";
-import { abbr, div } from 'framer-motion/client';
-import { relative } from 'path';
+
 
 const CursosTecnicos = () => {
   return (
@@ -50,6 +49,7 @@ const CursosTecnicos = () => {
         </p>
 
         {/* Listagem dos Cursos */}
+        <div className='listCursos'>
         {[
           
           {
@@ -77,7 +77,9 @@ const CursosTecnicos = () => {
             description: 'Seja um profissional fundamental para garantir ambientes de trabalho mais seguros.',
             link: '/segurancadotrabalho' // Substitua pela rota correta
           }
+          
         ].map((curso, index) => (
+          
           <div key={index} className="cursoItem">
             <h3 className="cursoTitle">{curso.title}</h3>
             <p className="cursoDescription">{curso.description}</p>
@@ -88,7 +90,9 @@ const CursosTecnicos = () => {
               Saiba Mais
             </a>
           </div>
+          
         ))}
+        </div>
       </section>
     </div>
   );

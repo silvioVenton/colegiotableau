@@ -33,7 +33,7 @@ const Cadastro = ()=> {
         
         <div className="formulario">
             <div className="headLine">
-                <h1>Vem fazer parte da família Tableau</h1>
+                <h1>Venha fazer parte da família Tableau</h1>
             </div>
             <div className="boardForm">
                 
@@ -61,7 +61,7 @@ const Cadastro = ()=> {
           name="nome"
           value={form.nome}
           onChange={handleChange}
-          placeholder="Seu Nome"
+          placeholder="Nome"
           required
           style={inputStyle}
         />
@@ -70,7 +70,7 @@ const Cadastro = ()=> {
           name="email"
           value={form.email}
           onChange={handleChange}
-          placeholder="Seu Email"
+          placeholder="Email"
           required
           style={inputStyle}
         />
@@ -79,7 +79,7 @@ const Cadastro = ()=> {
           name="telefone"
           value={form.telefone}
           onChange={handleChange}
-          placeholder="Seu Telefone"
+          placeholder="Telefone"
           required
           style={inputStyle}
         />

@@ -4,9 +4,11 @@
 import "./globals.css";
 import Image from "next/image";
 import React, { useState } from 'react';
-import { Button, ButtonGroup } from "@nextui-org/button";
+import { Button} from "@nextui-org/button";
 import Link from "next/link";
 import Menu from "./components/BotaoSuspenso"
+import BotaoModal from "./components/ButtonModal"
+
 
 
 
@@ -50,6 +52,11 @@ export default function RootLayout({
             <Link href="/cer">
               <Button color="primary">Ensino Fundamental e Médio</Button>
             </Link>
+
+           <BotaoModal></BotaoModal>
+
+            
+            
           </div>
 
           <Image

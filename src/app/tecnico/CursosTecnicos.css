@@ -1,3 +1,6 @@
+*h1{}
+
+
 .container {
   
   
@@ -23,17 +26,17 @@
   width: 100%;
 }
 .dados{
- padding-top:7rem;
+ padding-top:5rem;
  padding-bottom: 9rem;
 }
 .headline_dados{
   position:relative;
   
-  width: 60%;
+  width: 80%;
 }
 .headline_dados p{
-  color: #fff;
-  font-size: 3rem;
+  color: #FFD700;
+  font-size: 4rem;
   font-weight: bold;
   
   font-family: 'Bree GRK';
@@ -43,7 +46,7 @@
 }
 /* Hero Section */
 .heroSection {
-  background:#1b1464;
+  background:#FFD700;
   color: #fff;
   text-align: center;
   padding: 60px 20px;
@@ -53,13 +56,14 @@
 }
 
 .heroHeadline {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  
+  color: #1b1464;
   font-family: 'Bree GRK';
 }
 
 .heroSubheadline {
+  color: #333;
   font-size: 1.3rem;
   margin: 15px 0;
 }
@@ -67,7 +71,7 @@
  
   position: absolute;
   margin-top: 2rem;
-  background: rgba(4, 2, 107, 9);
+  background: #2e82bf;
   color: hsl(240, 100%, 100%);
   padding: 14px 24px;
   text-decoration: none;
@@ -89,18 +93,21 @@
 }
 
 .whatsappButton:hover {
-  background: rgba(37, 211, 102, 0.8);
+  background: #FFD700;
   transform: scale(1.05);
+  color: #1b1464;
 }
 
 /* Cursos Section */
 .cursosSection {
   margin-top: 40px;
+  
+  
 }
 
 .cursosTitle {
   font-size: 3rem;
-  color: #003366;
+  color: #1b1464;
   text-align: center;
   margin-bottom: 20px;
   font-weight: 600;
@@ -108,12 +115,22 @@
 }
 
 .cursosDescription {
+  color: #333;
+  font-size: 1.3rem;
   text-align: center;
   margin-bottom: 30px;
-  color: #555;
+  
+}
+.listCursos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
 }
 
 .cursoItem {
+  text-align: center;
+  width: 30%;
   background: #fff;
   
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,4 +156,28 @@
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 15px;
+}
+
+@media (max-width: 440px){
+  .dados{
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .headline_dados{
+    width: 100%;
+  }
+  .headline_dados p{
+    font-size: 2.5rem;
+  }
+  .whatsappButtonhead{
+    left: 23%;
+  }
+  .listCursos{
+    flex-direction: column;
+
+  }
+  .cursoItem{
+    width: 100%;
+  }
+
 }

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import "../globals.css";
 import { useState } from "react";
+import BotaoModal from "./ButtonModal";
 
 
 
@@ -32,6 +33,7 @@ const muda = ativo ? 'menu_suspenso menu_suspensoOpen':'menu_suspenso';
                 <a href="/radiologia"><li>Radiologia</li></a>
                 <a href="/veterinaria"><li>Análises Clínicas</li></a>
                 <a href="/segurancadotrabalho"><li>Segurança do Trabalho</li></a>
+                <BotaoModal></BotaoModal>
                 
             </ul>
             <button style={{position:"absolute", bottom:'1em', right:'2rem', border:'solid #fed20b 1px', margin:'0.5rem',

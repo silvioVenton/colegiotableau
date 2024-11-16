@@ -1,7 +1,8 @@
-
+import Link from "next/link";
 import Image from "next/image"
 import dynamic from 'next/dynamic';
 import "../enfermagem/enfermagem.css"
+import CadastroEnf from "../components/cadastroEnf"
 
 
 
@@ -36,22 +37,37 @@ const HomePage = () => {
       <section className="hero">
         <h1>Construa uma Carreira de Sucesso na Enfermagem</h1>
         <p>Sua oportunidade de impactar vidas e conquistar estabilidade começa aqui.</p>
-        <a href="#inscricao" className="buttonHero">  <q>Quero me inscrever no Curso.!</q></a>
+        <a href="#inscricoes_enfermagem" className="buttonHero">  <q>Quero me inscrever no Curso.!</q></a>
       </section>
+
+
+      <section className="conteudoCurso">
+      <h1>Conteúdo Programático</h1>
+      <ul>
+        <li>Primeiros Socorros e Emergências</li>
+        <li>Anatomia e Fisiologia</li>
+        <li>Cuidados com a Saúde e Enfermagem Geriátrica</li>
+        <li>Administração de Medicamentos</li>
+        <li>Práticas de Enfermagem em Clínica e Hospitalar</li>
+        <li>Duração de 24 meses (PARA AUXILIAR e TÉCNICO DE ENFERMAGEM)</li>
+        <li>Duração: 10 Meses (PARA QUEM JÁ TEM AUXILIAR DE ENFERMAGEM)</li>
+      </ul>
+    </section>
 
       {/* Seção de Benefícios do Curso */}
       <section className="cause">
-        <h2>Por Que Escolher o Colégio Tableau ?</h2>
+        <h1>Por Que Escolher o Colégio Tableau ?</h1>
         <p>
-        No Colégio Tableau, você encontra mais do que uma educação de qualidade, encontra um verdadeiro parceiro na sua jornada profissional. Com mais de 25 anos de experiência, oferecemos uma equipe de professores especializados e apaixonados por ensinar, que dedicam-se a transformar cada aula em um passo significativo para o seu futuro. Além disso, contamos com uma estrutura de estágio integrada para os cursos de enfermagem, garantindo que você desenvolva habilidades práticas e entre no mercado de trabalho com confiança e qualificação. Escolher o Colégio Tableau é optar por uma instituição que valoriza sua trajetória e está comprometida com o seu sucesso pessoal e profissional.
+        Com mais de <strong>25 anos</strong> de experiência, oferecemos uma equipe de professores especializados e apaixonados por ensinar, que dedicam-se a transformar cada aula em um passo significativo para o seu futuro. Além disso, contamos com uma <strong>estrutura de estágio integrada para os cursos de enfermagem</strong>, garantindo que você desenvolva habilidades práticas e <strong>entre no mercado de trabalho com confiança e qualificação.</strong>
         </p>
+        <Link href="https://wa.me/5511973799471?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20curso%20de%20enfermagem"target="_blank" rel="noopener noreferrer">
         <button type="button" className="causeButton"> Fale com nossa secretaria</button>
-        
+        </Link>
         
       </section>
 
       <section className="onde">
-        <h2>Onde Você Pode Trabalhar Após o Curso?</h2>
+        <h1>Onde Você Pode Trabalhar Após o Curso?</h1>
         <div className="ondeLocais">
           <ul>
             <li>Hospitais e Clínicas</li>
@@ -70,11 +86,14 @@ const HomePage = () => {
         
       </section>
 
+
+      
+
       {/* Seção de Crescimento da Enfermagem */}
       <section className="sectionDados">
         <div className="dadosCofen">
-        <h2>Oportunidades Sem Limites: A Enfermagem Está em Alta!</h2>
-        <p className="sectionText">
+        <h1>Oportunidades Sem Limites: A Enfermagem Está em Alta!</h1>
+        <p>
           O número de profissionais de enfermagem no Brasil cresceu 66% nos últimos 10 anos. No mundo, o déficit global
           é de 5,9 milhões de profissionais. Essa é sua chance de se destacar em uma carreira de alta demanda.
         </p>
@@ -85,24 +104,52 @@ const HomePage = () => {
 
         </div>
       </section>
+      <section className="galeria">
+        <Image
+        src="/galeria/enfermagem/enf01.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/enfermagem/enf05.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/enfermagem/enf03.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/enfermagem/enf04.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+       
+
+      </section>
       
       
 
       {/* Seção de Testemunhos */}
-      <section className="classe">
-        <h2>Histórias de Sucesso</h2>
-        <p>
-          Em mais de 25 anos, participamos 
-        </p>
-        {/* Placeholder para imagens de alunos ou vídeo de depoimento */}
-        
-      </section>
+      
 
       {/* Seção Final - Última Chamada para Ação */}
-      <section className="cta">
-        <h2 className="sectionTitle">Está Pronto para Fazer a Diferença?</h2>
+      <section className="cta" id="inscricoes_enfermagem">
+        <h1 className="sectionTitle">Está Pronto para Fazer a Diferença?</h1>
         <p>O futuro da enfermagem está nas suas mãos. Inscreva-se agora e comece a sua jornada!</p>
-        <a href="#inscricao" className="buttonCta">Inscreva-se Agora!</a>
+        <CadastroEnf
+        />
+        
+        
       </section>
 
      

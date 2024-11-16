@@ -41,7 +41,7 @@ para um desenvolvimento de habilidades essenciais como pensamento crítico, cria
 E nós do Tableau preparamos nossos jovens para buscar seus objetivos,
 enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excelência. </p>
 
-        <Link href="#">
+        <Link href="/cer/#matriculasFundamental">
         <Button className ="btn_matriculas" color="primary">
           <h1>Matrículas Abertas</h1>
         </Button>
