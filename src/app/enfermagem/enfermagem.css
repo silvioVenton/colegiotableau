@@ -1,5 +1,5 @@
 
-*{
+@font-face{
   font-family: 'Bree GRK';
   src: url('/fonts/BreeGRK-Regular.woff2') format('woff2'),
        url('/fonts/BreeGRK-Regular.woff') format('woff'),
