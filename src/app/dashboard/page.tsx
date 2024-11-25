@@ -4,10 +4,20 @@ import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import FilterInput from "../components/FilterInput";
 
+// Definir o tipo para os dados do Firestore
+interface Cadastro {
+  id: string;
+  curso: string;
+  email: string;
+  nome: string;
+  telefone: string;
+  data: string;
+}
+
 export default function Home() {
-  const [dados, setDados] = useState([]);
-  const [filtroCurso, setFiltroCurso] = useState("");
-  const [filtroNome, setFiltroNome] = useState("");
+  const [dados, setDados] = useState<Cadastro[]>([]); // Definir tipo explícito para os dados
+  const [filtroCurso, setFiltroCurso] = useState<string>("");
+  const [filtroNome, setFiltroNome] = useState<string>("");
 
   // Função para buscar os dados
   useEffect(() => {
@@ -27,7 +37,7 @@ export default function Home() {
               : "Não informado",
           };
         });
-        setDados(data);
+        setDados(data); // Agora o tipo de dados é conhecido
       } catch (error) {
         console.error("Erro ao buscar os dados: ", error);
       }
@@ -76,9 +86,9 @@ export default function Home() {
             ))
           ) : (
             <tr>
-              <td colSpan="6" style={{ textAlign: "center", padding: "10px" }}>
-                Nenhum dado encontrado
-              </td>
+               <td colSpan={6} style={{ textAlign: "center", padding: "10px" }}>
+    Nenhum dado encontrado
+  </td>
             </tr>
           )}
         </tbody>
