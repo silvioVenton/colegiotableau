@@ -68,9 +68,9 @@ const CursosTecnicos = () => {
             link: '/veterinaria' // Substitua pela rota correta
           },
           {
-            title: 'Análises Clínicas',
-            description: 'Desenvolva habilidades essenciais para atuar em laboratórios de análises clínicas.',
-            link: '/analiseclinica' // Substitua pela rota correta
+            title: 'Farmácia',
+            description: '.',
+            link: '/farmacia' // Substitua pela rota correta
           },
           {
             title: 'Segurança do Trabalho',
