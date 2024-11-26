@@ -1,0 +1,30 @@
+.filtroInput{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 10px; flex-wrap:wrap;
+
+}
+.filtroTempo{
+     margin-bottom: 1rem; 
+     display:flex; 
+     flex-wrap:wrap;
+
+}
+.ListDB{
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 1rem; 
+}
+
+
+
+@media  (max-width: 440px) {
+    .filtroTempo{
+        flex-direction: column;
+   
+   }
+    .ListDB{
+        
+        max-width: 50%;
+    }
+}

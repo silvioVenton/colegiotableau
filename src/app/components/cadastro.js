@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { db } from "./firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import InputMask from "react-input-mask"; // Importa a biblioteca de máscara
 import "../../app/escola.css";
 
 const Cadastro = () => {
@@ -19,6 +20,14 @@ const Cadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validação básica de e-mail
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      alert("Por favor, insira um e-mail válido.");
+      return;
+    }
+
     try {
       await addDoc(collection(db, "cadastro"), {
         ...form,
@@ -79,15 +88,24 @@ const Cadastro = () => {
               required
               style={inputStyle}
             />
-            <input
-              type="text"
-              name="telefone"
+            <InputMask
+              mask="(99) 99999-9999" // Máscara para telefone
               value={form.telefone}
-              onChange={handleChange}
-              placeholder="Telefone"
-              required
-              style={inputStyle}
-            />
+              onChange={(e) =>
+                setForm({ ...form, telefone: e.target.value })
+              }
+            >
+              {(inputProps) => (
+                <input
+                  {...inputProps}
+                  type="text"
+                  name="telefone"
+                  placeholder="Telefone"
+                  required
+                  style={inputStyle}
+                />
+              )}
+            </InputMask>
             <button type="submit" style={buttonStyle}>
               Enviar
             </button>
@@ -139,4 +157,5 @@ const buttonStyle = {
 };
 
 export default Cadastro;
+
 
