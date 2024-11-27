@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose }) => {
           <li><a href="http://tableautecnico.ultramax.com.br:8102/gestaoescolar/admin/" target="_blank" rel="noopener noreferrer">Ultramax Técnico</a></li>
           <li><a href="https://colegiotableaujundiai.com.br/unidade-i/online-i/gestao/" target="_blank" rel="noopener noreferrer">Ultramax Cer</a></li>
           <li><a href="https://colegiotableaujundiai.com.br/unidade-i/online-i/prof/" target="_blank" rel="noopener noreferrer">Ultramax Professor</a></li>
-          <li><a href='./dashboard' target='_blank' rel='noopener noreferrer'>Dashborn</a></li>
+         {/*<li><a href='./dashboard' target='_blank' rel='noopener noreferrer'>Dashborn</a></li>*/}
         </ul>
       </div>
     </div>
