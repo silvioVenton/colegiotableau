@@ -63,7 +63,7 @@ const CursosTecnicos = () => {
             link: '/radiologia' // Substitua pela rota correta
           },
           {
-            title: 'Veterinário',
+            title: 'Veterinária',
             description: 'Se você ama animais e quer trabalhar com a saúde e bem-estar deles, este é o curso certo.',
             link: '/veterinaria' // Substitua pela rota correta
           },
