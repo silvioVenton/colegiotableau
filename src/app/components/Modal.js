@@ -19,9 +19,15 @@ const Modal = ({ isOpen, onClose }) => {
         </button>
         <h2 className="modal-title">Acesse os Links</h2>
         <ul className="modal-links">
-          <li><a href="http://tableautecnico.ultramax.com.br:8102/gestaoescolar/admin/" target="_blank" rel="noopener noreferrer">Ultramax Técnico</a></li>
-          <li><a href="https://colegiotableaujundiai.com.br/unidade-i/online-i/gestao/" target="_blank" rel="noopener noreferrer">Ultramax Cer</a></li>
-          <li><a href="https://colegiotableaujundiai.com.br/unidade-i/online-i/prof/" target="_blank" rel="noopener noreferrer">Ultramax Professor</a></li>
+          
+          <li><a href="https://tableau.ultramax.com.br/gestaoescolar/admin" target="_blank" rel="noopener noreferrer">Ultramax Cer</a></li>
+          <li><a href="https://tableau.ultramax.com.br/gestaoescolar/faces/aluno/v2/login.xhtml" target="_blank" rel="noopener noreferrer">Ultramax Alunos Cer</a></li>
+          <li><a href="https://tableau.ultramax.com.br/gestaoescolar/professor" target="_blank" rel="noopener noreferrer">Ultramax Professor Cer</a></li>
+          
+          <li><a href="https://tableautecnico.ultramax.com.br/gestaoescolar/admin/" target="_blank" rel="noopener noreferrer">Ultramax Técnico</a></li>
+          <li><a href="https://tableautecnico.ultramax.com.br/gestaoescolar/faces/aluno/v2/login.xhtml" target="_blank" rel="noopener noreferrer">Ultramax Alunos Técnico</a></li>
+          <li><a href="https://tableautecnico.ultramax.com.br/gestaoescolar/professor" target="_blank" rel="noopener noreferrer">Ultramax Professor Técnico</a></li>
+          
          {/*<li><a href='./dashboard' target='_blank' rel='noopener noreferrer'>Dashborn</a></li>*/}
         </ul>
       </div>
