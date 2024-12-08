@@ -193,6 +193,9 @@ enfrentar desafios e aproveitar oportunidades para alcançar  um futuro de excel
             <Link href="./farmacia"><span>FARMÁCIA</span></Link>
           </div>
           <div className="quadro">
+            <Link href="./farmacia"><span>ANÁLISES CLINÍCAS</span></Link>
+          </div>
+          <div className="quadro">
             <Link href="./segurancadotrabalho"><span>SEGURANÇA DO TRABALHO</span></Link>
           </div>
          

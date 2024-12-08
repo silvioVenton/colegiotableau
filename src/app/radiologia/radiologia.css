@@ -1,0 +1,386 @@
+
+@font-face{
+  font-family: 'Bree GRK';
+  src: url('/fonts/BreeGRK-Regular.woff2') format('woff2'),
+       url('/fonts/BreeGRK-Regular.woff') format('woff'),
+       url('/fonts/BreeGRK-Regular.ttf') format('truetype');
+  font-display: swap; /* Garante o carregamento progressivo */
+  font-weight: normal;
+  font-style: normal;
+    
+  }
+* h1 {
+  font-family: 'Bree GRK';
+  font-size:3.5rem; 
+  font-weight: 600;
+}
+* p {
+  font-family: Encode Sans, sans-serif; 
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container {
+    max-Width:100%;
+    margin: 0 auto;
+    font-Family: Arial, sans-serif;
+  }
+  .logoWhatsapp{
+    z-index: 100;
+    position:fixed; 
+    right:3rem;
+    bottom:3rem;
+}
+.logoWhatsapp{
+  width: auto;
+  height: auto;
+}
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/tecnico/backgroundRadiologia.png');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+  .hero h1{
+    color: #FFD700;
+    margin-bottom: 3rem;
+  }
+  .hero p{
+    color:#5ec1cc ;
+    margin-bottom: 3rem;
+  }
+  .buttonHero {
+    text-align: center;
+    width: 30%;
+    background-Color:#FFD700;
+    color: #1b1464;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 auto;
+  }
+
+.conteudoCurso{
+  display: flexbox;
+  justify-items: center;
+  padding: 2rem;
+}
+.conteudoCurso h2{
+  font-family: 'Bree GRK';
+    font-Size:4em;
+    font-weight: 600;
+}
+.conteudoCurso ul{
+  text-align: center;
+}
+.conteudoCurso ul li{
+  font-family: Encode Sans, sans-serif; 
+    color:#1b1464;
+    font-size: 30px;
+}
+
+
+  .cause{
+    background-image: url('/backTwo2.png');
+      background-size: cover;
+      
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 3em;
+  }
+  .cause h1{
+    
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+    
+    
+
+  }
+  .cause p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+
+  }
+  .causeButton{
+   border-radius: 10px;
+    background-color: #1b1464 ;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Bree GRK';
+    font-size: 20px;
+    color: #FFD700;
+  }
+
+  .onde{
+    width: 100%;
+    background-color:#5ec1cc ;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .onde h1{
+    
+    color: #fff ;
+    
+  }
+  .ondeLocais ul li{
+    font-family: Encode Sans, sans-serif;
+    font-size: 30px;
+   font-weight: bolder;
+   color: #1b1464;
+  }
+
+ .sectionDados{
+  
+  margin-left: 4em;
+  margin-right: 4em;
+  border: #2e82bf 2px solid;
+  border-radius: 15px;
+  margin-Bottom:50px;
+  margin-top:50px;
+  padding: 2em;
+ }.dadosCofen{
+  
+  text-align: center;
+  
+ }
+ .dadosCofen h1{
+    
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+  }
+  
+
+  .galeria{
+    display: grid;
+    grid-auto-flow: column;
+
+  }
+
+  .classe{
+    width: 100%;
+    background-image: url('/tecnico/backgroundClasse-01.png');
+    background-size: cover;
+    padding: 3rem;
+  }
+  .classe h1{
+    font-family: 'Bree GRK';
+    
+    color: #fff;
+    font-weight: 600;
+  }
+  .classe p{
+    
+    color:#5ec1cc ;
+    
+  }
+  
+
+ 
+  .section {
+    margin-Bottom:50px;
+    padding: 20px;
+  }
+  .cta {
+    display: flex;
+    flex-direction: column;
+    
+    background-Color: #FFD700;
+    color: #1b1464;
+    padding: 20px 0;
+    text-Align: center;
+    font-Weight: bold;
+  }
+  
+  .cta p{
+    font-size: 20px;
+    padding-bottom: 2rem;
+    color: #000;
+  }
+  .buttonCta{
+    width: 30%;
+    background-Color: #1b1464;
+    color: #fff;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+    margin: 0 auto;
+  }
+  .button {
+    background-Color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-Radius: 5px;
+    text-Decoration: none;
+  }
+  .sectionTitle {
+    font-Size: 3em;
+    color: #1b1464 ;
+    font-family: 'Bree GRK';
+    font-weight: 600;
+  }
+  .sectionText {
+    font-Size: 1.2em;
+    line-Height: 1.6;
+    color: #333;
+  }
+  .vaga{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  @media (max-width: 440px){
+
+ *h1{
+  font-size: 5rem;
+
+ }
+
+
+    .logoWhatsapp{
+      
+      right:2rem;
+      bottom:2rem;
+  }
+    .logoWhatsapp{
+      width: 50px;
+      height: 50px;
+    }
+  
+    .hero{
+      background-position: center;
+      padding: 2rem
+    }
+    .hero h1{
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .hero p{
+      font-size: 20px;
+      text-align: center;
+    }
+    .buttonHero{
+      width: 80%;
+      margin:0 auto 2rem;
+
+    }
+
+    .conteudoCurso{
+      display: flexbox;
+      text-align: center;
+      padding: 2rem;
+
+    }
+    .conteudoCurso h1{
+      font-family: 'Bree GRK';
+      font-size: 2.5rem;
+        
+        
+    }
+    .conteudoCurso ul{
+      text-align: center;
+    }
+    .conteudoCurso ul li{
+      font-family: Encode Sans, sans-serif; 
+        color:#1b1464;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .cause{
+      
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .cause h1{
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+    .cause p{
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+    .causeButton{
+      background-color: #1b1464;
+      color: #fff;
+    }
+    .onde{
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+    }
+    
+    .onde ul li{
+      font-size: 20px;
+    }
+    .sectionDados{
+      margin: 0;
+      border: none;
+      padding: 2;
+    }
+    .dadosCofen{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .dadosCofen h1{
+      font-size: 2.5rem;
+    }
+   
+    .dadosCofen p{
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+    .grafico{
+      display: none;
+    }
+
+    .galeria{
+      
+      display: grid;
+      grid-auto-flow:row;
+  
+    }
+    .classe{
+      padding: 1rem;
+    }
+    .classe h1{
+      text-align: center;
+    }
+    .classe p{
+      font-size: 20px;
+      text-align: center;
+    }
+    .cta{
+      padding: 2rem;
+    }
+    .buttonCta{
+      width: 80%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+
+  }
+
+

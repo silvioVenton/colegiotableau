@@ -20,12 +20,14 @@
     font-size: 30px;
     font-weight: 600;
   }
+  
 
   .logoWhatsapp{
     
     position:fixed; 
     right:3rem;
     bottom:3rem;
+    z-index: 100;
 }
 
 .hero {
@@ -131,6 +133,13 @@
   .img_bolsa:hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .galeria{
+      
+    display: grid;
+    grid-auto-flow:column;
+
+  }
+ 
 
 
 
@@ -198,6 +207,12 @@
       .img_bolsa{
         text-align: center;
         
+      }
+      .galeria{
+      
+        display: grid;
+        grid-auto-flow:column;
+    
       }
 
 

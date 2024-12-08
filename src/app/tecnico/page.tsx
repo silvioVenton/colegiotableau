@@ -73,6 +73,11 @@ const CursosTecnicos = () => {
             link: '/farmacia' // Substitua pela rota correta
           },
           {
+            title: 'Análises Clinicas',
+            description: '.',
+            link: '/analisesclinicas' // Substitua pela rota correta
+          },
+          {
             title: 'Segurança do Trabalho',
             description: 'Seja um profissional fundamental para garantir ambientes de trabalho mais seguros.',
             link: '/segurancadotrabalho' // Substitua pela rota correta

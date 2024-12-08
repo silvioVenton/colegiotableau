@@ -7,8 +7,8 @@ export default function Fundamental(){
         <a id="btn_fixo" href="https://wa.me/5511991205350?text=Estou%20vindo%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Fundamental%20ou%20Médio"target="_blank" rel="noopener noreferrer">
         <Image
         src="/whatsappLogo.png"
-        width={50}
-        height={50}
+        width={80}
+        height={80}
         alt="logoWhatsapp"
         className="logoWhatsapp"
         
@@ -66,6 +66,39 @@ Confiar a educação do seu filho ao Colégio Tableau é garantir uma formação
             </div>
 
         </section>
+
+         <section className="galeria">
+        <Image
+        src="/galeria/cer/cer02.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/cer/cer03.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/cer/cer06.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+        <Image
+        src="/galeria/cer/cer04.png"
+        width={500}
+        height={500}
+        alt="primeira foto"
+
+        />
+       
+
+      </section>*
 
         <section className="bolsa" id="matriculasFundamental">
 

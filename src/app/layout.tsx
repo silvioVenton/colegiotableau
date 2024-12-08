@@ -93,6 +93,7 @@ export default function RootLayout({
               <dd>Radiologia</dd>
               <dd>Veterinária</dd>
               <dd>Análises Clínicas</dd>
+              <dd>Fármacia</dd>
               <dd>Segurança do Trabalho</dd>
             </dl>
           </div>

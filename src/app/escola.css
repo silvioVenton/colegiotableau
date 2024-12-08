@@ -309,6 +309,32 @@
 
 
 
+@media (max-width: 1420px){
+  .txtFist{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+    top: 20px;
+    
+  }
+  .txtFist span{
+    
+    font-size: 50px;
+    font-weight: bold;
+    color:#1b1464 ;
+  }
+  .txtFist p{
+    font-family: Encode Sans, sans-serif;
+    font-size: 18px;
+  }
+}
+
+
+
+
 
 
 
@@ -505,3 +531,5 @@
     }
    
 }
+
+
