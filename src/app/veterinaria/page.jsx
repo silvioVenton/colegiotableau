@@ -52,8 +52,7 @@ const HomePage = () => {
         <li>Cuidados com Animais Silvestres e Exóticos</li>
         <li>Clínica e cirurgia veterinária</li>
         <li>Ética e legislação profissional</li>
-        <li>Estágio supervisionado </li>
-        <li>Carga horária: total: 1.200 horas (em média 6 meses de curso)</li>
+        <li>Carga horária: total: 1.200 horas</li>
       </ul>
     </section>
 

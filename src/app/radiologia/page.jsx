@@ -52,7 +52,7 @@ const HomePage = () => {
         <li>Radiologia Intervencionista</li>
         <li>Ética e Legislação Profissional</li>
         <li>Estágio Supervisionado</li>
-        <li>Carga Horária: Total: 1.200 horas (em média 6 meses de curso intensivo)</li>
+        <li>Carga Horária: Total: 1.600 horas</li>
       </ul>
     </section>
 

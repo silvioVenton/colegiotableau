@@ -48,7 +48,7 @@ export default function RootLayout({
               <Button color="primary">Home</Button>
             </Link>
             <Link href="/tecnico">
-              <Button color="primary">Cursos Técnico</Button>
+              <Button color="primary">Cursos Técnicos</Button>
             </Link>
             <Link href="/cer">
               <Button color="primary">Ensino Fundamental e Médio</Button>

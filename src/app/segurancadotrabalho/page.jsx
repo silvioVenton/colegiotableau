@@ -50,8 +50,7 @@ const HomePage = () => {
         <li>Equipamentos de Proteção Individual (EPIs)</li>
         <li>Ergonomia no Ambiente de Trabalho</li>
         <li>Acidentes de Trabalho e Investigação</li>
-        <li>Estágio Supervisionado</li>
-        <li>Carga Horária: Total: 1.200 horas (em média 6 meses de curso)</li>
+        <li>Carga Horária: Total: 1.200 horas</li>
         
       </ul>
     </section>

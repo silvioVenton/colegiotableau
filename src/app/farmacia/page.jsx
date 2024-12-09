@@ -52,7 +52,7 @@ const HomePage = () => {
         <li>Atendimento farmacêutico e orientação ao paciente</li>
         <li>Análises clínicas e laboratoriais</li>
         <li>Estágio supervisionado </li>
-        <li>Carga horária: total: 1.200 horas (em média 6 meses de curso)</li>
+        <li>Carga horária: total: 1.200 horas</li>
       </ul>
     </section>
 
