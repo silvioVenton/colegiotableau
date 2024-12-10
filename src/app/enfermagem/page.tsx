@@ -49,8 +49,8 @@ const HomePage = () => {
         <li>Cuidados com a saúde e enfermagem geriátrica</li>
         <li>Administração de Medicamentos</li>
         <li>Práticas de Enfermagem em Clínica e Hospitalar</li>
-        <li>Duração de 24 meses (PARA AUXILIAR e TÉCNICO DE ENFERMAGEM)</li>
-        <li>Duração: 10 Meses (PARA QUEM JÁ TEM AUXILIAR DE ENFERMAGEM)</li>
+        {/*<li>Duração de 24 meses (PARA AUXILIAR e TÉCNICO DE ENFERMAGEM)</li>
+        <li>Duração: 10 Meses (PARA QUEM JÁ TEM AUXILIAR DE ENFERMAGEM)</li>*/}
       </ul>
     </section>
 

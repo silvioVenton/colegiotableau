@@ -52,7 +52,7 @@ const HomePage = () => {
         <li>Radiologia Intervencionista</li>
         <li>Ética e Legislação Profissional</li>
         <li>Estágio Supervisionado</li>
-        <li>Carga Horária: Total: 1.600 horas</li>
+        {/*<li>Carga Horária: Total: 1.600 horas</li>*/}
       </ul>
     </section>
 

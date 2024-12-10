@@ -53,7 +53,7 @@ const HomePage = () => {
         <li>Técnicas de Coleta de Material Biológico</li>
         <li>Legislação e Ética Profissional</li>
         <li>Técnicas de Coleta de Material Biológico</li>
-        <li>Carga horária: total: 1.200 horas</li>
+        {/*<li>Carga horária: total: 1.200 horas</li>*/}
       </ul>
     </section>
 
