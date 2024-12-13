@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { db } from "./firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"; // Importar serverTimestamp
+import InputMask from "react-input-mask"; // Importando a biblioteca de máscara
 import "../../app/escola.css";
 
 const CadastroAnalises = () => {
@@ -21,10 +22,15 @@ const CadastroAnalises = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Registra a data de preenchimento
+      const preenchimentoData = new Date().toLocaleString();
+
       await addDoc(collection(db, "cadastro"), {
         ...form,
-        data: serverTimestamp(), // Adiciona a data/hora do servidor
+        data: serverTimestamp(), // Adiciona a data/hora do servidor (timestamp do Firebase)
+        dataPreenchimento: preenchimentoData, // Data de preenchimento no formato de string
       });
+
       alert("Seu cadastro foi enviado com sucesso! Em breve entraremos em contato.");
       // Limpa os campos do formulário após o envio
       setForm({ curso: "", nome: "", email: "", telefone: "" });
@@ -51,7 +57,6 @@ const CadastroAnalises = () => {
               required
             >
               <option value="">Curso técnico em Análise Clínica</option>
-              
             </select>
             <input
               type="text"
@@ -71,8 +76,8 @@ const CadastroAnalises = () => {
               required
               style={inputStyle}
             />
-            <input
-              type="text"
+            <InputMask
+              mask="(99) 99999-9999"
               name="telefone"
               value={form.telefone}
               onChange={handleChange}
@@ -131,4 +136,5 @@ const buttonStyle = {
 };
 
 export default CadastroAnalises;
+
 

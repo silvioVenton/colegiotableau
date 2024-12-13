@@ -39,13 +39,17 @@ export default function Home() {
             timestamp: docData.data ? docData.data.seconds * 1000 : 0, // Timestamp para cálculo
           };
         });
-        setDados(data);
+  
+        // Ordenando os dados por timestamp de forma decrescente
+        const dadosOrdenados = data.sort((a, b) => b.timestamp - a.timestamp);
+        setDados(dadosOrdenados);
       } catch (error) {
         console.error("Erro ao buscar os dados: ", error);
       }
     }
     fetchData();
   }, []);
+  
 
   // Filtrar os dados
   const dadosFiltrados = dados.filter((item) => {
