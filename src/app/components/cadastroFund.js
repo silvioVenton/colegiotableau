@@ -1,59 +1,11 @@
 "use client";
 import { useState } from "react";
 import { db } from "./firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore"; // Importar serverTimestamp
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import InputMask from "react-input-mask";
 import "../../app/escola.css";
 
-const functions = require("firebase-functions");
-const nodemailer = require("nodemailer");
-
-const gmailEmail = "pelebrufer56@gmail.com";
-const gmailPassword = "(..Sil%&Ray6,,)@";
-
-
-// Configurar o transportador do Nodemailer
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: gmailEmail,
-    pass: gmailPassword,
-  },
-});
-
-// Função para enviar e-mail
-exports.sendEmail = functions.firestore.document("cadastro/{docId}").onCreate(async (snapshot) => {
-  const data = snapshot.data();
-
-  const mailOptions = {
-    from: `"Cadastro Técnico" <${gmailEmail}>`,
-    to: "destino@gmail.com",
-    subject: "Novo Cadastro para Ensino médio ou fundamental",
-    text: `Novo cadastro recebido:
-    Curso: ${data.curso}
-    Nome: ${data.nome}
-    Email: ${data.email}
-    Telefone: ${data.telefone}
-    Data de Preenchimento: ${data.dataPreenchimento || "Indisponível"}`,
-  };
-
-  try {
-    await transporter.sendMail(mailOptions);
-    console.log("E-mail enviado com sucesso!");
-  } catch (error) {
-    console.error("Erro ao enviar e-mail:", error);
-  }
-});
-
-
-
-
-
-
-
-
-
-
-const CadastroFund = () => {
+const CadastroAnalises = () => {
   const [form, setForm] = useState({
     curso: "",
     nome: "",
@@ -61,21 +13,20 @@ const CadastroFund = () => {
     telefone: "",
   });
 
-  // Atualiza os valores do formulário conforme o usuário digita
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Envia o formulário com o campo "data" preenchido automaticamente
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await addDoc(collection(db, "cadastro"), {
         ...form,
-        data: serverTimestamp(), // Adiciona a data/hora do servidor
+        data: serverTimestamp(),
+        dataPreenchimento: new Date().toLocaleString(),
       });
+
       alert("Seu cadastro foi enviado com sucesso! Em breve entraremos em contato.");
-      // Limpa os campos do formulário após o envio
       setForm({ curso: "", nome: "", email: "", telefone: "" });
     } catch (error) {
       console.error("Erro ao enviar cadastro:", error);
@@ -85,26 +36,19 @@ const CadastroFund = () => {
 
   return (
     <div className="formulario">
-      <div className="headLine">
-        <h1>Venha fazer parte da família Tableau</h1>
-      </div>
       <div className="boardForm">
-        <div style={formContainerStyle}>
-          <p style={formDescriptionStyle}>
+        <div>
+          <p>
             Preencha o formulário abaixo e nossa equipe entrará em contato com você.
           </p>
-          <form onSubmit={handleSubmit} style={formStyle}>
+          <form onSubmit={handleSubmit}>
             <select
-              style={inputStyle}
-              type="text"
               name="curso"
               value={form.curso}
               onChange={handleChange}
               required
             >
-              <option value="">Curso de Interesse</option>
-              <option value="EnsinoFundamental">Ensino Fundamental</option>
-              <option value="EnsinoMedio">Ensino Médio</option>
+              <option value="">Curso técnico em Análise Clínica</option>
             </select>
             <input
               type="text"
@@ -113,29 +57,24 @@ const CadastroFund = () => {
               onChange={handleChange}
               placeholder="Nome"
               required
-              style={inputStyle}
             />
             <input
-              type="email" // Alterado para validar o formato de email
+              type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="Email"
               required
-              style={inputStyle}
             />
-            <input
-              type="text"
+            <InputMask
+              mask="(99) 99999-9999"
               name="telefone"
               value={form.telefone}
               onChange={handleChange}
               placeholder="Telefone"
               required
-              style={inputStyle}
             />
-            <button type="submit" style={buttonStyle}>
-              Enviar
-            </button>
+            <button type="submit">Inscreva-se Agora!</button>
           </form>
         </div>
       </div>
@@ -143,44 +82,4 @@ const CadastroFund = () => {
   );
 };
 
-// Estilos modernos para o formulário
-const formContainerStyle = {
-  maxWidth: "500px",
-  margin: "0 auto",
-  padding: "20px",
-  borderRadius: "10px",
-  boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-  backgroundColor: "#fff",
-  textAlign: "center",
-};
-
-const formDescriptionStyle = {
-  fontSize: "16px",
-  marginBottom: "20px",
-  color: "#555",
-};
-
-const formStyle = {
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
-};
-
-const inputStyle = {
-  padding: "10px",
-  borderRadius: "5px",
-  border: "1px solid #ddd",
-  fontSize: "16px",
-};
-
-const buttonStyle = {
-  padding: "10px 15px",
-  borderRadius: "5px",
-  border: "none",
-  backgroundColor: "#007bff",
-  color: "#fff",
-  fontSize: "16px",
-  cursor: "pointer",
-};
-
-export default CadastroFund;
+export default CadastroAnalises;

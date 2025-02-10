@@ -15,7 +15,7 @@ export default function ContagemMedio(){
         />
         <div className="contador_valores">
         <h1><Contador valor = "15000"/></h1>
-        <h3>Alunos de ensino .</h3>
+        <h3>Alunos de ensino </h3>
         <h2>Médio formados</h2>
         </div>
        </div>
