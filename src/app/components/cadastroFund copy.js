@@ -1,57 +1,9 @@
 "use client";
 import { useState } from "react";
+
 import { db } from "./firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"; // Importar serverTimestamp
 import "../../app/escola.css";
-
-const functions = require("firebase-functions");
-const nodemailer = require("nodemailer");
-
-const gmailEmail = "pelebrufer56@gmail.com";
-const gmailPassword = "(..Sil%&Ray6,,)@";
-
-
-// Configurar o transportador do Nodemailer
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: gmailEmail,
-    pass: gmailPassword,
-  },
-});
-
-// Função para enviar e-mail
-exports.sendEmail = functions.firestore.document("cadastro/{docId}").onCreate(async (snapshot) => {
-  const data = snapshot.data();
-
-  const mailOptions = {
-    from: `"Cadastro Técnico" <${gmailEmail}>`,
-    to: "destino@gmail.com",
-    subject: "Novo Cadastro para Ensino médio ou fundamental",
-    text: `Novo cadastro recebido:
-    Curso: ${data.curso}
-    Nome: ${data.nome}
-    Email: ${data.email}
-    Telefone: ${data.telefone}
-    Data de Preenchimento: ${data.dataPreenchimento || "Indisponível"}`,
-  };
-
-  try {
-    await transporter.sendMail(mailOptions);
-    console.log("E-mail enviado com sucesso!");
-  } catch (error) {
-    console.error("Erro ao enviar e-mail:", error);
-  }
-});
-
-
-
-
-
-
-
-
-
 
 const CadastroFund = () => {
   const [form, setForm] = useState({
