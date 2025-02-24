@@ -8,6 +8,7 @@ import { Button} from "@nextui-org/button";
 import Link from "next/link";
 import Menu from "./components/BotaoSuspenso"
 import BotaoModal from "./components/ButtonModal"
+import BotaoModalCurriculum from './components/ButoonCurriculun'
 
 
 
@@ -53,6 +54,7 @@ export default function RootLayout({
             <Link href="/cer">
               <Button color="primary">Ensino Fundamental e Médio</Button>
             </Link>
+            <BotaoModalCurriculum></BotaoModalCurriculum>
 
            <BotaoModal></BotaoModal>
 

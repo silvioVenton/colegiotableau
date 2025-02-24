@@ -2,9 +2,12 @@
 import { useState } from 'react';
 
 
+
+
 export default function UploadCurriculo() {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState('');
   const [message, setMessage] = useState('');
+  
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -26,7 +29,7 @@ export default function UploadCurriculo() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('../components/updateEmail', {
+      const response = await fetch("/api/enviarCurriculo", {
         method: 'POST',
         body: formData,
       });

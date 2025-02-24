@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer'; // Exemplo de envio de e-mail com Nodemailer
 import formidable from 'formidable';
 
+
 export const config = {
   api: {
     bodyParser: false, // Desabilitar o bodyParser para lidar com o envio de arquivos
