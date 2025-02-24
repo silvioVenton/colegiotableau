@@ -10,12 +10,6 @@ import Menu from "./components/BotaoSuspenso"
 import BotaoModal from "./components/ButtonModal"
 import BotaoModalCurriculum from './components/ButoonCurriculun'
 
-
-
-
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
