@@ -29,7 +29,7 @@ export default function UploadCurriculo() {
     formData.append('file', file);
 
     try {
-      const response = await fetch("/api/enviarCurriculo", {
+      const response = await fetch("/api/enviarCurriculum", {
         method: 'POST',
         body: formData,
       });
