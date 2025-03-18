@@ -1,0 +1,14 @@
+.container{
+    height:60vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.trabalheConosco{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+
+}
