@@ -53,7 +53,7 @@ export default function UploadCurriculo() {
   return (
     <div className="container">
     <div className="trabalheConosco">
-      <h1 style={{fontSize:"60px", color:'#1b1464'}}>Faça parte da família Tableau</h1>
+      <h1>Faça parte da família Tableau</h1>
     </div>
     
     <div className="p-4 max-w-md mx-auto bg-white rounded shadow">
