@@ -23,7 +23,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: '"Curriculo" <tableau.contatos@gmail.com>',
-      to: "destinatario@gmail.com",
+      to: "tableau.contatos@gmail.com",
       subject: "Novo Currículo Recebido",
       text: "Você recebeu um novo currículo em anexo.",
       attachments: [

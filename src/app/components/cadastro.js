@@ -20,26 +20,36 @@ const Cadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Validação básica de e-mail
+  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.email)) {
       alert("Por favor, insira um e-mail válido.");
       return;
     }
-
+  
     try {
-      await addDoc(collection(db, "cadastro"), {
-        ...form,
-        data: serverTimestamp(), // Adiciona o carimbo de data/hora no envio
+      const response = await fetch("/api/enviarFormIndex", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-      alert("Seu cadastro foi enviado com sucesso! Em breve entraremos em contato.");
-      setForm({ curso: "", nome: "", email: "", telefone: "" }); // Reseta o formulário
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        alert("Seu cadastro foi enviado com sucesso!");
+        setForm({ curso: "", nome: "", email: "", telefone: "" });
+      } else {
+        alert(data.error || "Erro ao enviar o formulário.");
+      }
     } catch (error) {
-      console.error("Erro ao enviar cadastro:", error);
-      alert("Ocorreu um erro ao enviar seu cadastro. Por favor, tente novamente.");
+      console.error("Erro ao enviar:", error);
+      alert("Erro ao enviar o formulário. Tente novamente.");
     }
   };
+  
+
+
 
   return (
     <div className="formulario">
